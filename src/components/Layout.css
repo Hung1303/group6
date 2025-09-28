@@ -1,0 +1,136 @@
+/* Layout Styles - Vietnam Flag Theme */
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #fff5f5 0%, #ffe6e6 50%, #fff5f5 100%);
+  position: relative;
+}
+
+.layout::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(218, 37, 29, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(255, 215, 0, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.layout-main {
+  flex: 1;
+  padding-top: 0;
+  min-height: calc(100vh - 70px);
+}
+
+/* Page Transitions */
+.page-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.page-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.page-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Content Container */
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 20px;
+}
+
+/* Section Spacing */
+.section {
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.section::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #da251d, #ffd700, #da251d);
+  border-radius: 2px;
+  opacity: 0.6;
+}
+
+/* Vietnam-themed decorative elements */
+.vietnam-flag-decoration {
+  position: relative;
+}
+
+.vietnam-flag-decoration::after {
+  content: '🇻🇳';
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  font-size: 2rem;
+  opacity: 0.2;
+  animation: wave 2s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  75% { transform: rotate(-5deg); }
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .content-container {
+    padding: 1.5rem 15px;
+  }
+  
+  .section {
+    margin-bottom: 3rem;
+  }
+  
+  .vietnam-flag-decoration::after {
+    font-size: 1.5rem;
+    top: -10px;
+    right: -10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-container {
+    padding: 1rem 10px;
+  }
+  
+  .section {
+    margin-bottom: 2rem;
+  }
+  
+  .vietnam-flag-decoration::after {
+    font-size: 1.2rem;
+    top: -8px;
+    right: -8px;
+  }
+}

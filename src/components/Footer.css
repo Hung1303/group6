@@ -1,0 +1,375 @@
+/* Vietnam-themed Footer */
+.vietnam-footer {
+  background: linear-gradient(135deg, #da251d 0%, #c41e3a 50%, #da251d 100%);
+  color: white;
+  position: relative;
+  overflow: hidden;
+  margin-top: 4rem;
+}
+
+/* Vietnam Flag Pattern */
+.footer-flag-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 8px;
+  display: flex;
+  opacity: 0.8;
+}
+
+.flag-stripe {
+  flex: 1;
+}
+
+.flag-stripe.red {
+  background: linear-gradient(90deg, #da251d, #c41e3a);
+}
+
+.flag-stripe.gold {
+  background: linear-gradient(90deg, #ffd700, #ffed4e);
+}
+
+/* Footer Container */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 20px 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+/* Footer Content */
+.footer-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+/* Footer Logo Section */
+.footer-logo {
+  padding-right: 2rem;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.footer-icon {
+  font-size: 2.5rem;
+  margin-right: 1rem;
+  animation: pulse 2s infinite;
+}
+
+.footer-brand h3 {
+  color: #ffd700;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.footer-description {
+  color: #fff;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.footer-social {
+  margin-top: 1.5rem;
+}
+
+.social-label {
+  display: block;
+  color: #ffd700;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  transform: scale(1.2) rotate(10deg);
+}
+
+/* Footer Sections */
+.footer-section h4 {
+  color: #ffd700;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.footer-section h4::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background: #ffd700;
+  border-radius: 1px;
+}
+
+/* Footer Navigation */
+.footer-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav li {
+  margin-bottom: 0.8rem;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.footer-link:hover {
+  color: #ffd700;
+  transform: translateX(5px);
+  text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
+/* Footer Content List */
+.footer-content-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-content-list li {
+  color: #fff;
+  margin-bottom: 0.6rem;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-content-list li:hover {
+  color: #ffd700;
+}
+
+/* Contact Info */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.contact-icon {
+  font-size: 1.2rem;
+  margin-right: 0.8rem;
+  transition: transform 0.3s ease;
+}
+
+.contact-item:hover .contact-icon {
+  transform: scale(1.1);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  border-top: 2px solid rgba(255, 215, 0, 0.3);
+  padding-top: 1.5rem;
+  position: relative;
+}
+
+.footer-bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.footer-copyright {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.copyright-icon {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+  color: #ffd700;
+}
+
+.footer-motto {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.motto-text {
+  color: #ffd700;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.motto-icon {
+  font-size: 1.2rem;
+  animation: wave 2s ease-in-out infinite;
+}
+
+/* Decorative Elements */
+.footer-decorations {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.decoration-star {
+  font-size: 1.2rem;
+  opacity: 0.6;
+  animation: twinkle 3s ease-in-out infinite;
+}
+
+.decoration-star:nth-child(1) { animation-delay: 0s; }
+.decoration-star:nth-child(2) { animation-delay: 0.6s; }
+.decoration-star:nth-child(3) { animation-delay: 1.2s; }
+.decoration-star:nth-child(4) { animation-delay: 1.8s; }
+.decoration-star:nth-child(5) { animation-delay: 2.4s; }
+
+/* Animations */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+@keyframes wave {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  75% { transform: rotate(-5deg); }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  
+  .footer-logo {
+    grid-column: 1 / -1;
+    padding-right: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 2rem 15px 1rem;
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .footer-bottom-content {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .footer-brand h3 {
+    font-size: 1.5rem;
+  }
+  
+  .footer-icon {
+    font-size: 2rem;
+  }
+  
+  .footer-decorations {
+    gap: 0.5rem;
+  }
+  
+  .decoration-star {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 1.5rem 10px 1rem;
+  }
+  
+  .footer-brand {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  
+  .footer-icon {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-brand h3 {
+    font-size: 1.3rem;
+  }
+  
+  .social-icons {
+    justify-content: center;
+  }
+  
+  .footer-bottom-content {
+    gap: 0.8rem;
+  }
+  
+  .footer-copyright,
+  .motto-text {
+    font-size: 0.8rem;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .vietnam-footer {
+    background: #da251d !important;
+    color: white !important;
+  }
+  
+  .footer-flag-pattern {
+    display: none;
+  }
+  
+  .footer-decorations {
+    display: none;
+  }
+}

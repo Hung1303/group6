@@ -1,0 +1,256 @@
+/* Vietnam Theme Decorative Elements */
+.vietnam-theme {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: -1;
+  overflow: hidden;
+}
+
+/* Vietnam Flag Pattern */
+.flag-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  opacity: 0.05;
+}
+
+.flag-stripe {
+  flex: 1;
+  position: relative;
+}
+
+.flag-stripe.red {
+  background: linear-gradient(135deg, #da251d, #c41e3a);
+}
+
+.flag-stripe.gold {
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
+}
+
+/* Floating Stars */
+.floating-elements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.floating-star {
+  position: absolute;
+  font-size: 1.5rem;
+  opacity: 0.1;
+  animation: floatStar 6s ease-in-out infinite;
+}
+
+.floating-star:nth-child(1) {
+  top: 20%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.floating-star:nth-child(2) {
+  top: 40%;
+  right: 15%;
+  animation-delay: 1.2s;
+}
+
+.floating-star:nth-child(3) {
+  top: 60%;
+  left: 20%;
+  animation-delay: 2.4s;
+}
+
+.floating-star:nth-child(4) {
+  top: 80%;
+  right: 25%;
+  animation-delay: 3.6s;
+}
+
+.floating-star:nth-child(5) {
+  top: 30%;
+  left: 50%;
+  animation-delay: 4.8s;
+}
+
+@keyframes floatStar {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.1;
+  }
+  50% {
+    transform: translateY(-20px) rotate(180deg);
+    opacity: 0.3;
+  }
+}
+
+/* Cultural Elements */
+.cultural-elements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.cultural-icon {
+  position: absolute;
+  font-size: 2rem;
+  opacity: 0.08;
+  animation: culturalFloat 8s ease-in-out infinite;
+}
+
+.cultural-icon:nth-child(1) {
+  top: 15%;
+  left: 5%;
+  animation-delay: 0s;
+}
+
+.cultural-icon:nth-child(2) {
+  top: 25%;
+  right: 8%;
+  animation-delay: 2s;
+}
+
+.cultural-icon:nth-child(3) {
+  top: 70%;
+  left: 12%;
+  animation-delay: 4s;
+}
+
+.cultural-icon:nth-child(4) {
+  top: 85%;
+  right: 18%;
+  animation-delay: 6s;
+}
+
+@keyframes culturalFloat {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+    opacity: 0.08;
+  }
+  25% {
+    transform: translateY(-15px) scale(1.1);
+    opacity: 0.15;
+  }
+  50% {
+    transform: translateY(-30px) scale(1);
+    opacity: 0.08;
+  }
+  75% {
+    transform: translateY(-15px) scale(0.9);
+    opacity: 0.12;
+  }
+}
+
+/* Vietnam-themed borders and accents */
+.vietnam-border {
+  position: relative;
+}
+
+.vietnam-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #da251d, #ffd700, #da251d);
+  border-radius: 2px;
+}
+
+.vietnam-border::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #da251d, #ffd700, #da251d);
+  border-radius: 2px;
+}
+
+/* Vietnam-themed cards */
+.vietnam-card {
+  background: linear-gradient(135deg, #fff 0%, #fff5f5 100%);
+  border: 2px solid transparent;
+  border-image: linear-gradient(45deg, #da251d, #ffd700, #da251d) 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.vietnam-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #da251d, #ffd700, #da251d);
+}
+
+/* Vietnam-themed buttons */
+.vietnam-btn {
+  background: linear-gradient(45deg, #da251d, #c41e3a);
+  color: white;
+  border: 2px solid #ffd700;
+  position: relative;
+  overflow: hidden;
+}
+
+.vietnam-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.3), transparent);
+  transition: left 0.5s;
+}
+
+.vietnam-btn:hover::before {
+  left: 100%;
+}
+
+.vietnam-btn:hover {
+  background: linear-gradient(45deg, #c41e3a, #da251d);
+  box-shadow: 0 5px 15px rgba(218, 37, 29, 0.4);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .floating-star {
+    font-size: 1.2rem;
+  }
+  
+  .cultural-icon {
+    font-size: 1.5rem;
+  }
+  
+  .flag-pattern {
+    opacity: 0.03;
+  }
+}
+
+@media (max-width: 480px) {
+  .floating-star {
+    font-size: 1rem;
+  }
+  
+  .cultural-icon {
+    font-size: 1.2rem;
+  }
+  
+  .flag-pattern {
+    opacity: 0.02;
+  }
+}

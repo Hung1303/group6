@@ -1,0 +1,324 @@
+/* Theory Page Styles */
+.theory-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.theory-header {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 2rem 0;
+  text-align: center;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.theory-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.theory-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+.theory-content {
+  padding: 3rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.theory-section {
+  margin-bottom: 3rem;
+}
+
+.theory-section h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.theory-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  border-radius: 2px;
+}
+
+.theory-card {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.theory-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.theory-card h3 {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #667eea;
+  padding-left: 1rem;
+}
+
+.theory-content-text {
+  line-height: 1.8;
+  color: #34495e;
+}
+
+.theory-content-text p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.theory-content-text ul {
+  margin: 1rem 0;
+  padding-left: 2rem;
+}
+
+.theory-content-text li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.theory-content-text strong {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+/* Characteristics Grid */
+.characteristics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.characteristic-item {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid #667eea;
+}
+
+.characteristic-item h4 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.characteristic-item p {
+  color: #5a6c7d;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Worker Class Details */
+.worker-class-details,
+.farmer-class-details,
+.intellectual-class-details {
+  margin-top: 1.5rem;
+}
+
+.worker-class-details h4,
+.farmer-class-details h4,
+.intellectual-class-details h4 {
+  color: #2c3e50;
+  font-size: 1.2rem;
+  margin: 1.5rem 0 1rem 0;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 0.5rem;
+}
+
+/* Alliance Structure */
+.alliance-structure {
+  margin: 2rem 0;
+}
+
+.alliance-diagram {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.alliance-center {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+.center-item {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.alliance-branches {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.branch-item {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid #e9ecef;
+  min-width: 200px;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+/* Transition Characteristics */
+.transition-characteristics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.characteristic-box {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #dee2e6;
+  transition: transform 0.3s ease;
+}
+
+.characteristic-box:hover {
+  transform: translateY(-3px);
+}
+
+.characteristic-box h4 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.characteristic-box p {
+  color: #5a6c7d;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Conclusion Points */
+.conclusion-points {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid #28a745;
+  margin-top: 1.5rem;
+}
+
+.conclusion-points h4 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.conclusion-points ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.conclusion-points li {
+  margin-bottom: 0.5rem;
+  color: #495057;
+  font-size: 1rem;
+}
+
+/* Footer */
+.theory-footer {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 3rem;
+}
+
+.theory-footer p {
+  margin: 0;
+  opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .theory-header h1 {
+    font-size: 2rem;
+  }
+  
+  .theory-subtitle {
+    font-size: 1rem;
+  }
+  
+  .theory-card {
+    padding: 1.5rem;
+  }
+  
+  .theory-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .characteristics-grid,
+  .transition-characteristics {
+    grid-template-columns: 1fr;
+  }
+  
+  .alliance-branches {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .theory-header {
+    padding: 1.5rem 0;
+  }
+  
+  .theory-header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .theory-content {
+    padding: 2rem 0;
+  }
+  
+  .theory-card {
+    padding: 1rem;
+  }
+}
