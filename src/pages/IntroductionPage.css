@@ -6,7 +6,7 @@
 
 /* Hero Section */
 .hero-section {
-  background-image: url("https://i0.wp.com/nhanvanviet.com/wp-content/uploads/2023/10/tranhcodong_giaoduc_so1.jpg?resize=800%2C445&ssl=1");
+  background-image: url("https://tuyenquang.dcs.vn/images/DCSVN_1.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   min-height: 88vh;
@@ -16,7 +16,6 @@
   align-items: center;
   position: relative;
   overflow: auto;
-  color: black;
 }
 
 .hero-section::before {
@@ -47,12 +46,12 @@
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: yellow;
+  color: #ffeb3b; 
   text-shadow: 
-    1px 1px 0 black,
-   -1px 1px 0 black,
-    1px -1px 0 black,
-   -1px -1px 0 black;
+    -1.5px -1.5px 0 #000,
+     1.5px -1.5px 0 #000,
+    -1.5px  1.5px 0 #000,
+     1.5px  1.5px 0 #000; /* thicker black outline */
   line-height: 1.2;
 }
 
@@ -60,28 +59,25 @@
   font-size: 1.5rem;
   margin-bottom: 2rem;
   font-weight: 500;
-  color: black;
+  color: #ffeb3b;
   text-shadow: 
-    1px 1px 0 yellow,
-   -1px 1px 0 yellow,
-    1px -1px 0 yellow,
-   -1px -1px 0 yellow;
+    -1.2px -1.2px 0 #000,
+     1.2px -1.2px 0 #000,
+    -1.2px  1.2px 0 #000,
+     1.2px  1.2px 0 #000;
 }
 
-.hero-description {
-  font-size: 1.8rem;
+.hero-description p{
+  font-size: 1.4em;
   line-height: 1.6;
   color: black;
   text-shadow: 
-    1px 1px 0 yellow,
-   -1px 1px 0 yellow,
-    1px -1px 0 yellow,
-   -1px -1px 0 yellow;
+    -1px -1px 0 white,
+     1px -1px 0 white,
+    -1px  1px 0 white,
+     1px  1px 0 white;
 }
 
-.hero-description p {
-  margin: 0;
-}
 
 /* Main Content */
 .main-content {

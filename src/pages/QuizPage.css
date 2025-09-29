@@ -1,7 +1,7 @@
 /* Quiz Page Styles */
 .quiz-page {
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #d61414 10%, #ffffff 90%);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 2rem 0;
 }
@@ -22,22 +22,24 @@
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
+  color: whitesmoke;
   text-shadow: 
-    0.5px 0.5px 0 whitesmoke,
-   -0.5px 0.5px 0 whitesmoke,
-    0.5px -0.5px 0 whitesmoke,
-   -0.5px -0.5px 0 whitesmoke;
+    1px 1px 0 black,
+   -1px 1px 0 black,
+    1px -1px 0 black,
+   -1px -1px 0 black;
 }
 
 .quiz-header p {
   font-size: 1.2rem;
   opacity: 0.9;
   margin-bottom: 2rem;
+  color: whitesmoke;
   text-shadow: 
-    0.5px 0.5px 0 whitesmoke,
-   -0.5px 0.5px 0 whitesmoke,
-    0.5px -0.5px 0 whitesmoke,
-   -0.5px -0.5px 0 whitesmoke;
+    1px 1px 0 black,
+   -1px 1px 0 black,
+    1px -1px 0 black,
+   -1px -1px 0 black;
 }
 
 .progress-bar {

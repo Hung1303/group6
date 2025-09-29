@@ -1,13 +1,16 @@
 /* Theory Page Styles */
 .theory-page {
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #ad0404 10%, #ffffff 90%);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .theory-header {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+  background-image: url("https://static.mattran.org.vn/Uploaded/admin/2019_02_03/1_PFQL.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  min-height: 75vh;
   padding: 2rem 0;
   text-align: center;
   color: white;
@@ -17,23 +20,26 @@
 .theory-header h1 {
   font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 0.5rem;
+  text-align: center;
+  margin-top: 10rem;
+  color: whitesmoke;
   text-shadow: 
-    0.5px 0.5px 0 whitesmoke,
-   -0.5px 0.5px 0 whitesmoke,
-    0.5px -0.5px 0 whitesmoke,
-   -0.5px -0.5px 0 whitesmoke;
+    1px 1px 0 black,
+   -1px 1px 0 black,
+    1px -1px 0 black,
+   -1px -1px 0 black;
 }
 
 .theory-subtitle {
   font-size: 1.4rem;
   opacity: 1;
-  font-weight: 400;
+  font-weight: 500;
+  color: white;
   text-shadow: 
-    0.5px 0.5px 0 whitesmoke,
-   -0.5px 0.5px 0 whitesmoke,
-    0.5px -0.5px 0 whitesmoke,
-   -0.5px -0.5px 0 whitesmoke;
+    1px 1px 0 black,
+   -1px 1px 0 black,
+    1px -1px 0 black,
+   -1px -1px 0 black;
 }
 
 .theory-section h2 {
