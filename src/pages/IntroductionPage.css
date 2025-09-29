@@ -6,12 +6,17 @@
 
 /* Hero Section */
 .hero-section {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  min-height: 60vh;
+  background-image: url("ccxh.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 88vh;
+  background-position: top center;
+  background-attachment: local;
   display: flex;
   align-items: center;
   position: relative;
-  overflow: hidden;
+  overflow: auto;
+  color: black;
 }
 
 .hero-section::before {
@@ -42,21 +47,36 @@
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  color: yellow;
+  text-shadow: 
+    1px 1px 0 black,
+   -1px 1px 0 black,
+    1px -1px 0 black,
+   -1px -1px 0 black;
   line-height: 1.2;
 }
 
 .hero-subtitle {
   font-size: 1.5rem;
   margin-bottom: 2rem;
-  opacity: 0.9;
-  font-weight: 300;
+  font-weight: 500;
+  color: black;
+  text-shadow: 
+    1px 1px 0 yellow,
+   -1px 1px 0 yellow,
+    1px -1px 0 yellow,
+   -1px -1px 0 yellow;
 }
 
 .hero-description {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   line-height: 1.6;
-  opacity: 0.95;
+  color: black;
+  text-shadow: 
+    1px 1px 0 yellow,
+   -1px 1px 0 yellow,
+    1px -1px 0 yellow,
+   -1px -1px 0 yellow;
 }
 
 .hero-description p {
@@ -84,6 +104,7 @@
   font-size: 2.5rem;
   color: #2c3e50;
   text-align: center;
+  margin-top: 2rem;
   margin-bottom: 3rem;
   position: relative;
 }

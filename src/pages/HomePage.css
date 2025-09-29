@@ -13,6 +13,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  
 }
 
 .hero-section::before {
@@ -54,6 +55,7 @@
   margin: 0 auto;
   font-size: 1.1rem;
   opacity: 0.95;
+  color: black;
 }
 
 /* Container */

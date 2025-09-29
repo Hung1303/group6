@@ -23,7 +23,7 @@ const Navigation: React.FC = () => {
       <div className="nav-container">
         <div className="nav-brand">
           <Link to="/" className="nav-logo">
-            <span className="logo-icon">🇻🇳</span>
+            <span className="logo-icon">⭐</span>
             <span className="logo-text">Cơ cấu xã hội</span>
           </Link>
         </div>
